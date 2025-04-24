@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mock Media Server API Docs</title>
+</head>
+<body>
+  <h1>Welcome to the Mock Media Server API</h1>
+  <p>Use the following endpoints to interact with the server:</p>
+  <ul>
+    <li><strong>GET /api/media</strong> - Retrieve all media metadata</li>
+    <li><strong>POST /api/media</strong> - Add new media metadata (JSON: { title, filename, type })</li>
+    <li><strong>GET /media/:filename</strong> - Download a media file</li>
+  </ul>
+  <p>Send metadata in the following format:</p>
+  <pre>{
+  "title": "Sample Image",
+  "filename": "khutso.jpg",
+  "type": "image"
+}</pre>
+</body>
+</html>
